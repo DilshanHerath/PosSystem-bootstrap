@@ -1,0 +1,119 @@
+#title-text{
+    color: #b0bec5;
+}
+#title-text:hover{
+    color: #eceff1;
+}
+#left-bar{
+    background-color: #263238;
+    width: 270px;
+    height: calc(100vh - 56px);
+    position: fixed;
+    top:56px;
+    z-index: 0;
+    padding: 10px;
+    color: #eceff1;
+}
+#nav-bar-main{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+nav#side-nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav#side-nav ul a li{
+    list-style: none;
+    display: block;
+    color: cornflowerblue;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+nav#side-nav ul a li:hover{
+    background-color: darkslateblue;
+    color: whitesmoke;
+}
+.active{
+    background-color: darkslateblue;
+    color: whitesmoke!important;
+}
+nav#side-nav ul a{
+    text-decoration: none;
+}
+nav#side-nav ul a i{
+    font-size: x-large;
+    margin-right: 10px;
+    width: 25px;
+    text-align: right;
+}
+#right-bar{
+    height: calc(100vh - 56px);
+    margin-top: 56px;
+    margin-left: 270px;
+}
+@media (max-width: 700px) {
+    #left-bar{
+        width: auto;
+        position: relative;
+        height: auto;
+    }
+    #right-bar{
+        position: relative;
+        margin-top: 56px;
+        margin-left: 0;
+    }
+    #home-tiles{
+        margin: 0;
+    }
+}
+#img{
+    margin: auto;
+    top: 60px;
+}
+.content-area{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/*------------------progress Bar-------------------------*/
+
+/*.container{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform:translate(-50%,-50%);
+    width: 1000px;
+}*/
+.container .box{
+    width: 25%;
+    float: left;
+    padding: 20%;
+}
+.container-fluid .box .chart{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+
+}
+.container-fluid .box canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container-fluid .box h2{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align:baseline;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
